@@ -1,0 +1,46 @@
+/* ================== FOOTER STYLES ================== */
+
+footer {
+    background-color: var(--color-primary-2); /* Fundo Laranja Escuro */
+    padding-top: 20px;
+}
+
+#footer_items {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 8% 24px 8%;
+    align-items: center;
+}
+
+.social-media-buttons a {
+    background-color: var(--color-primary-3); /* Amarelo Claro */
+    color: var(--color-neutral-0); /* Branco */
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.social-media-buttons a:hover {
+    background-color: var(--color-primary-4); /* Laranja Forte */
+}
+
+#footer_items .social-media-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+#footer_items #copyright {
+    color: var(--color-neutral-1); /* Preto */
+    font-weight: 500;
+}
+
+/* ================== RESPONSIVE STYLES ================== */
+
+@media screen and (max-width: 600px) {
+    #footer_items {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Ioná Oliveira - Alimentação Saudável e Saborosa</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="#home" id="nav_logo">
+                <img src="src/images/logo.png" alt="Ioná Oliveira - Logo" class="logo-image">
+            </a>            
+            <ul id="nav_list">
+                <li class="nav-item active"><a href="#home">Início</a></li>
+                <li class="nav-item"><a href="#menu">Kits</a></li>
+                <li class="nav-item"><a href="#menu-builder">Cardápio</a></li>
+            </ul>
+            <button class="btn-default">Peça Aqui</button>
+            <button id="mobile_btn"><i class="fa-solid fa-bars"></i></button>
+        </nav>
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item"><a href="#home">Início</a></li>
+                <li class="nav-item"><a href="#menu">Cardápio</a></li>
+                <li class="nav-item"><a href="#testimonials">Avaliações</a></li>
+            </ul>
+            <button class="btn-default">Peça Aqui</button>
+        </div>
+    </header>
+
+    <main id="content">
+        <!-- Seção Home -->
+        <section id="home">
+            <div class="shape"></div>
+            <div id="cta">
+                <h1 class="title">Alimentação Saudável e <span>Saborosa</span></h1>
+                <p class="description">Marmitas caseiras e snacks saudáveis prontos para você!</p>
+                <div id="cta_buttons">
+                    <a href="#menu" class="btn-default">Ver Cardápio</a>
+                    <a href="tel:+55555555555" id="phone_button">
+                        <button class="btn-default"><i class="fa-solid fa-phone"></i></button> (51) 92342-3243
+                    </a>
+                </div>
+            </div>
+            <div id="banner">
+                <img src="src/images/hero.png" alt="Marmitas saudáveis">
+            </div>
+        </section>
+
+        <!-- Seção Cardápio -->
+        <section id="menu">
+            <h2 class="section-title">Kits de Marmitas</h2>
+            <h3 class="section-subtitle">Escolha algum de nossos Kits de Marmitas Especiais</h3>
+            <div id="dishes">
+
+                <!-- Kit Mensal -->
+                <div class="dish">
+                    <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
+                    <img src="src/images/kit-mensal.png" alt="Kit Mensal" class="dish-image">
+                    <h3>Kit Mensal</h3>
+                    <span class="dish-description">Composto de 40 marmitas, com entregas semanais de 10 unidades.</span>
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$1.000,00</h4>
+                        <button class="btn-default"><i class="fa-solid fa-basket-shopping"></i> Comprar</button>
+                    </div>
+                </div>
+
+                <!-- Kit Semanal -->
+                <div class="dish">
+                    <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
+                    <img src="src/images/kit-semanal.png" alt="Kit Semanal" class="dish-image">
+                    <h3>Kit Semanal</h3>
+                    <span class="dish-description">Composto de 10 marmitas entregues semanalmente.</span>
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$275,00</h4>
+                        <button class="btn-default"><i class="fa-solid fa-basket-shopping"></i> Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Montagem de Cardápios -->
+        <section id="menu-builder">
+            <h2 class="section-title">Monte seu Cardápio</h2>
+            <h3 class="section-subtitle">Escolha uma base e até 3 acompanhamentos</h3>
+
+            <div class="menu-section">
+                <h3>Bases Disponíveis</h3>
+                <div class="menu-card-container">
+                    <!-- Base Cards -->
+                    <div class="menu-card">
+                        <h4>Opção 1 - Arroz com Legumes e Feijão Preto</h4>
+                        <p>Arroz branco refogado com legumes, feijão preto rico em proteínas.</p>
+                        <p><strong>Benefícios:</strong> Fibras, proteínas, ferro.</p>
+                    </div>
+                    <div class="menu-card">
+                        <h4>Opção 2 - Arroz Integral Premium e Feijão Preto</h4>
+                        <p>Arroz integral com grãos e castanhas, feijão preto.</p>
+                        <p><strong>Benefícios:</strong> Energia prolongada, proteínas, ferro.</p>
+                    </div>
+                    <div class="menu-card">
+                        <h4>Opção 3 - Arroz com Legumes e Feijão Fradinho</h4>
+                        <p>Arroz branco com legumes, feijão fradinho leve e saudável.</p>
+                        <p><strong>Benefícios:</strong> Nutrientes essenciais, proteínas, vitaminas.</p>
+                    </div>
+                    <div class="menu-card">
+                        <h4>Opção 4 - Arroz Integral Premium e Feijão Fradinho</h4>
+                        <p>Arroz integral com grãos e castanhas, feijão fradinho.</p>
+                        <p><strong>Benefícios:</strong> Energia prolongada, proteínas, vitaminas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-section">
+                <h3>Acompanhamentos (Escolha até 3)</h3>
+                <div class="menu-card-container">
+                    <!-- Acompanhamentos -->
+                    <div class="menu-card">🍖 Pernil Suíno - 150g (Baixo teor de sal)</div>
+                    <div class="menu-card">🍖 Lombo Recheado - 150g (Sabor intenso, menos sódio)</div>
+                    <div class="menu-card">🍗 Sobrecoxa Desossada - 150g (Suculenta e saborosa)</div>
+                    <div class="menu-card">🍗 Filé de Frango Grelhado - 150g (Leve e saudável)</div>
+                    <div class="menu-card">🍝 Filé à Parmegiana - 150g (Molho caseiro e queijo)</div>
+                    <div class="menu-card">🍗 Frango ao Creme de Queijo - 150g (Cremoso e delicioso)</div>
+                    <div class="menu-card">🍛 Strogonoff de Frango - 150g (Sabor rico e cremoso)</div>
+                    <div class="menu-card">✨ Lasanha de Frango Tradicional - 450g (Especial)</div>
+                </div>
+            </div>
+            
+            <!-- Seção de Caldos e Sopas -->
+            <div class="menu-section">
+                <h3>Caldos e Sopas (Substitutos do Jantar)</h3>
+                <div class="menu-card-container">
+                    <!-- Caldos -->
+                    <div class="menu-card">
+                        <h4>Caldo de Ervilhas Inteiras</h4>
+                        <p><strong>Caldo (420g):</strong> Cremoso e nutritivo, feito com ervilhas inteiras.</p>
+                        <p><strong>Proteína (120g):</strong> Filé de peito de frango picadinho.</p>
+                        <p><strong>Benefícios:</strong> Rico em fibras, proteínas e sabor leve.</p>
+                    </div>
+
+                    <div class="menu-card">
+                        <h4>Caldo de Feijão</h4>
+                        <p><strong>Caldo (420g):</strong> Preparado com feijão temperado e cozido à perfeição.</p>
+                        <p><strong>Proteína (120g):</strong> Linguiça defumada grelhada com cebolas.</p>
+                        <p><strong>Benefícios:</strong> Fonte de proteínas, ferro e sabor intenso.</p>
+                    </div>
+
+                    <div class="menu-card">
+                        <h4>Caldo de Raízes</h4>
+                        <p><strong>Caldo (420g):</strong> Feito com raízes nutritivas e saborosas.</p>
+                        <p><strong>Proteína (120g):</strong> Carne suína acebolada.</p>
+                        <p><strong>Benefícios:</strong> Nutrientes essenciais e sabor robusto.</p>
+                    </div>
+
+                    <div class="menu-card">
+                        <h4>Caldo de Lentilha</h4>
+                        <p><strong>Caldo (420g):</strong> Cremoso e rico em fibras, preparado com lentilhas cozidas.</p>
+                        <p><strong>Proteína (120g):</strong> Filé de peito de frango picadinho com alho e sal.</p>
+                        <p><strong>Benefícios:</strong> Fonte de proteínas vegetais, ferro e sabor suave.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-section">
+                <h3>Sopas (420g + 120g de proteína)</h3>
+                <div class="menu-card-container">
+                    <div class="menu-card">
+                        <h4>Sopa de Macarrão</h4>
+                        <p><strong>Sopa (420g):</strong> Macarrão leve e saboroso.</p>
+                        <p><strong>Proteína (120g):</strong> Sobrecoxa desossada a passarinho.</p>
+                        <p><strong>Benefícios:</strong> Refeição completa, leve e nutritiva.</p>
+                    </div>
+
+                    <div class="menu-card">
+                        <h4>Sopa de Feijão Branco</h4>
+                        <p><strong>Sopa (420g):</strong> Feijão branco cozido e temperado para um sabor suave.</p>
+                        <p><strong>Proteína (120g):</strong> Carne suína cozida junto com o feijão.</p>
+                        <p><strong>Benefícios:</strong> Rico em proteínas, ferro e nutrientes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-section">
+                <h3>Risoto (420g + 120g de proteína)</h3>
+                <div class="menu-card-container">
+                    <div class="menu-card">
+                        <h4>Risoto com Frango</h4>
+                        <p><strong>Risoto (420g):</strong> Cremoso e saboroso, preparado com arroz e temperos.</p>
+                        <p><strong>Proteína (120g):</strong> Frango desfiado.</p>
+                        <p><strong>Benefícios:</strong> Refeição completa, cremosa e nutritiva.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+    </main>
+
+    <footer>
+        <div id="footer_items">
+            <span>&copy; 2025 Isaac</span>
+            <div class="social-media-buttons">
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/javascript/script.js"></script>
+</body>
+</html>

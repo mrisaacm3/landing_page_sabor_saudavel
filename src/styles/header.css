@@ -1,0 +1,108 @@
+/* ================== HEADER STYLES ================== */
+
+header {
+    width: 100%;
+    padding: 10px 8%; /* Reduzi o padding superior e inferior */
+    position: sticky;
+    top: 0;
+    background-color: var(--color-primary-2); /* Laranja Escuro */
+    z-index: 3;
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%; /* Ajuste para centralizar os elementos */
+}
+
+#nav_logo {
+    display: flex;
+    align-items: center;
+}
+
+#nav_logo .logo-image {
+    width: auto; /* Mantém a proporção original */
+    height: 70px; /* Define uma altura fixa */
+    max-width: 150px; /* Limite de largura máximo */
+}
+
+#nav_list {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: var(--color-neutral-1); /* Preto */
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-item a:hover {
+    color: var(--color-primary-3); /* Amarelo Claro */
+}
+
+.nav-item.active a {
+    color: var(--color-primary-1); /* Laranja vibrante */
+    border-bottom: 3px solid var(--color-primary-4); /* Laranja Forte */
+}
+
+#mobile_btn {
+    display: none;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+/* ================== RESPONSIVE STYLES ================== */
+
+@media screen and (max-width: 1170px) {
+    #nav_list,
+    #navbar .btn-default {
+        display: none;
+    }
+
+    #mobile_btn {
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: var(--color-primary-1);
+    }
+
+    #mobile_menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--color-primary-2);
+    }
+
+    #mobile_nav_list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 12px 0px;
+    }
+
+    #mobile_nav_list .nav-item {
+        list-style: none;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #nav_logo .logo-image {
+        width: auto; /* Mantém a proporção */
+        height: 60px; /* Altura menor para telas pequenas */
+        max-width: 120px;
+    }
+
+    #navbar {
+        padding: 5px 5%;
+    }
+}
